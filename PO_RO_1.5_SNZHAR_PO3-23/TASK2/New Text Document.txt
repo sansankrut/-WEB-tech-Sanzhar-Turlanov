@@ -1,3 +1,5 @@
+CREATE SCHEMA IF NOT EXISTS car_rental_fix;
+
 CREATE TABLE IF NOT EXISTS car_rental_fix.Person (
     person_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
