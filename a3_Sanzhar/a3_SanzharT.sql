@@ -578,9 +578,9 @@ LIMIT 1;
 UPDATE
 	customer
 SET
-	first_name = 'Aibek',
-	last_name = 'Dzhaksybekov',
-	email = 'aibek.dzhaksybekov@sakilacustomer.org',
+	first_name = 'Sanzhar',
+	last_name = 'Turlanov',
+	email = 'sanzharT@gmail.com',
 	address_id = (
 	SELECT
 		MIN(address_id)
@@ -617,8 +617,8 @@ SELECT
 FROM
 	customer
 WHERE
-	first_name = 'Aibek'
-	AND last_name = 'Dzhaksybekov';
+	first_name = 'Sanzhar'
+	AND last_name = 'Turlanov';
 
 SELECT
 	*
@@ -631,8 +631,8 @@ WHERE
 	FROM
 		customer
 	WHERE
-		first_name = 'Aibek'
-		AND last_name = 'Dzhaksybekov'
+		first_name = 'Sanzhar'
+		AND last_name = 'Turlanov'
 );
 
 DELETE
@@ -645,8 +645,8 @@ WHERE
 	FROM
 		customer
 	WHERE
-		first_name = 'Aibek'
-		AND last_name = 'Dzhaksybekov'
+		first_name = 'Sanzhar'
+		AND last_name = 'Turlanov'
 );
 
 SELECT
@@ -660,8 +660,8 @@ WHERE
 	FROM
 		customer
 	WHERE
-		first_name = 'Aibek'
-		AND last_name = 'Dzhaksybekov'
+		first_name = 'Sanzhar'
+		AND last_name = 'Turlanov'
 );
 
 DELETE
@@ -674,8 +674,8 @@ WHERE
 	FROM
 		customer
 	WHERE
-		first_name = 'Aibek'
-		AND last_name = 'Dzhaksybekov'
+		first_name = 'Sanzhar'
+		AND last_name = 'Turlanov'
 );
 
 WITH rental_got AS (
@@ -712,8 +712,8 @@ INSERT
 			FROM
 				customer
 			WHERE
-				first_name = 'Aibek'
-				AND last_name = 'Dzhaksybekov'),
+				first_name = 'Sanzhar'
+				AND last_name = 'Turlanov'),
 			'2017-01-15 10:00:00'::TIMESTAMP + 7 * INTERVAL '1 day',
 			(
 			SELECT
@@ -734,8 +734,8 @@ INSERT
 				FROM
 					customer
 				WHERE
-					first_name = 'Aibek'
-					AND last_name = 'Dzhaksybekov')
+					first_name = 'Sanzhar'
+					AND last_name = 'Turlanov')
 				AND inventory_id = (
 				SELECT
 					i.inventory_id
@@ -826,8 +826,8 @@ INSERT
 			FROM
 				customer
 			WHERE
-				first_name = 'Aibek'
-				AND last_name = 'Dzhaksybekov'),
+				first_name = 'Sanzhar'
+				AND last_name = 'Turlanov'),
 			'2017-02-10 12:00:00'::TIMESTAMP + 14 * INTERVAL '1 day',
 			(
 			SELECT
@@ -848,8 +848,8 @@ INSERT
 				FROM
 					customer
 				WHERE
-					first_name = 'Aibek'
-					AND last_name = 'Dzhaksybekov')
+					first_name = 'Sanzhar'
+					AND last_name = 'Turlanov')
 				AND inventory_id = (
 				SELECT
 					i.inventory_id
@@ -940,8 +940,8 @@ INSERT
 			FROM
 				customer
 			WHERE
-				first_name = 'Aibek'
-				AND last_name = 'Dzhaksybekov'),
+				first_name = 'Sanzhar'
+				AND last_name = 'Turlanov'),
 			'2017-03-20 15:00:00'::TIMESTAMP + 21 * INTERVAL '1 day',
 			(
 			SELECT
@@ -962,8 +962,8 @@ INSERT
 				FROM
 					customer
 				WHERE
-					first_name = 'Aibek'
-					AND last_name = 'Dzhaksybekov')
+					first_name = 'Sanzhar'
+					AND last_name = 'Turlanov')
 				AND inventory_id = (
 				SELECT
 					i.inventory_id
