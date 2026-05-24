@@ -11,9 +11,8 @@ Schema name: cinema
 
 ## How to run
 
-Open pgAdmin, go to Query Tool, open the file 02_final.sql and press F5. Or if you use psql:
+Open DBeaver and put code:
 
-    psql -U postgres -f 02_final.sql
 
 You can run it multiple times, it will not give errors the second time.
 
